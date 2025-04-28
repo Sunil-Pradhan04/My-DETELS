@@ -8,6 +8,7 @@
 body{
     overflow-x: hidden;
     max-width: 100%;
+    /* background-color: blue; */
 }
 html{
     scroll-behavior: smooth;
@@ -16,8 +17,9 @@ html{
     justify-content: center;
     align-items: center; */
     max-width: 100%;
+    overflow-x: hidden;
 }
-header{
+.header{
     height: 50px;
     width: 100%;
     /* background-color: red; */
@@ -26,12 +28,48 @@ header{
     pointer-events: auto;
     /* position: relative; */
     position:fixed;
-    background-color: white;
+    background-color:white;
     margin: 0px;
-    z-index: -1;
+    z-index: 1;
+}
+.slide{
+    height: 50vh;
+    width: 26vh;
+    background-color: rgb(28, 23, 23);
+    position:fixed;
+    right: 0;
+    top: 0vh;
+    z-index: 1;
+    border-radius: 5px;
+    display: none;
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 1s ease-in-out;
+
+
+}
+.cancle{
+    height: 30px;
+    width: 30px;
+    /* background-color: red; */
+    left: auto;
+    margin-left: 85%;
+    margin-top: 8px ;
+    font-size: 25px;
+    color: white;
+
+}
+.bar{
+    height: 30px;
+    width: 30px;
+    /* background-color: red; */
+    left: auto;
+    margin-left: 75%;
+    margin-top: 8px ;
+    font-size: 25px;
 }
 a{
-    z-index: 1;
+    /* z-index: 1; */
     color: black;
     text-decoration: none;
 }
@@ -47,7 +85,7 @@ a{
     width: auto;
     text-align: center;
     border-top:5px;
-    margin-top: 5px;
+    margin-top: 10px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 18px;
     margin-left: 10%;
@@ -55,9 +93,11 @@ a{
 .item{
     display: flex;
     margin-left: auto;
-    margin-right: 35%;
+    /* margin-right: 35%; */
     margin-top: 10px;
     pointer-events: auto;
+    right: 0;
+    margin-left: 45%;
 
 }
 .page{
@@ -78,7 +118,7 @@ a{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 75vh;
+    height: auto;
     width: 90%;
     /* margin-left: 5%; */
     /* background-color: #e1b0b0; */
@@ -129,7 +169,7 @@ form{
     margin-top: 15px;
 }
 .about{
-    height: 100vh;
+    height: 80vh;
     width: 70vh;
     /* background-color: red; */
     /* text-align: center; */
@@ -141,11 +181,12 @@ form{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 25px;
     padding-left: 150px;
-    padding-top: 35%;
+    padding-top: 15%;
     letter-spacing: 3px;
     animation: fadeIn 1s ease-in-out;
     position: relative;
     margin-top: 20PX;
+    /* justify-content: center; */
 }
 .btn{
     width: 100px;
@@ -333,10 +374,22 @@ footer{
     .container{
         justify-content: center;
         width: 100%;
-        margin-top: 25px;
+        margin-top: 50px;
     margin-bottom: 30px;
     }
     .name{
         margin-left: 4%;
+    }
+    .page{
+        color: white;
+        margin-top: 20px;
+        left: 0;
+        margin-left: 20px;
+        text-align: left;
+        margin-bottom: 10px;
+        height: 20px;
+    }
+    a{
+        color: white;
     }
 }
