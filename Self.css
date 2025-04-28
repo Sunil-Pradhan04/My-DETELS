@@ -83,6 +83,9 @@ a{
     /* background-color: #e1b0b0; */
     margin-bottom: 15px;
     justify-content: space-between;
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 30px;
 }
 .about{
     height: 100vh;
@@ -100,6 +103,8 @@ a{
     padding-top: 35%;
     letter-spacing: 3px;
     animation: fadeIn 1s ease-in-out;
+    position: relative;
+    margin-top: 20PX;
 }
 .btn{
     width: 100px;
