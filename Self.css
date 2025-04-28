@@ -45,6 +45,7 @@ html{
     display: flex;
     flex-direction: column;
     animation: fadeIn 1s ease-in-out;
+    display: none;
 
 
 }
